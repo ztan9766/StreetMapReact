@@ -1,0 +1,38 @@
+.filter{
+    display: block;
+    position: fixed;
+    width: calc(25% - 1px);
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #e5e5e5;
+    transition: left .8s;
+}
+.mini .filter{
+    left: -25%;
+}
+.filter-header,
+.filter-list{
+    padding: 8px 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.filter-header h5{
+    margin: 0;
+}
+.filter-control input{
+    height: 40px;
+    padding-left: 10px;
+    width: calc(75% - 14px);
+}
+.filter-control button{
+    height: 46px;
+    width: 25%;
+    box-shadow: none;
+}
+.filter-control button:before{
+    display: inline-block;
+    content: url('./img/filter.svg');
+    height: 10px;
+    width: 10px;
+    margin-right: 1px;
+}
