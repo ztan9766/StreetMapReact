@@ -2,18 +2,28 @@ header{
     position: fixed;
     top: 0;
     left: 25%;
-    width: calc(75% - 30px);
-    padding: 8px 15px;
+    width: calc(75% - 3rem);
+    padding: .8rem 1.5rem;
     background: #fff;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: .1rem solid #e5e5e5;
     transition: left .8s;
+    font-size: 1.6rem;
 }
 .mini header{
-    width: calc(100% - 30px);
+    width: calc(100% - 3rem);
     left: 0;
 }
 .hamburger img{
     display: block;
-    height: 30px;
-    width: 30px;
+    height: 2rem;
+    width: 2rem;
+}
+@media screen and (max-width: 675px){
+    header{
+        width: 100%;
+        left: 0;
+    }
+    .mini header{
+        left: 100%;
+    }
 }

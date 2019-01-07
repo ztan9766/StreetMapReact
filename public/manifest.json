@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Street Map",
+  "name": "Street Map - React",
   "icons": [
     {
       "src": "favicon.ico",

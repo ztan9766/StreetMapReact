@@ -1,3 +1,6 @@
+html{
+  font-size: 10px;
+}
 body {
   margin: 0;
   padding: 0;
@@ -11,4 +14,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@media screen and (max-width: 1034px){
+  html{
+    font-size: 8px;
+  }
 }

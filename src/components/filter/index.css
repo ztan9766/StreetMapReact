@@ -1,38 +1,80 @@
 .filter{
     display: block;
     position: fixed;
-    width: calc(25% - 1px);
+    width: calc(25% - .1rem);
     height: 100%;
     top: 0;
     left: 0;
-    border-right: 1px solid #e5e5e5;
+    border-right: .1rem solid #e5e5e5;
     transition: left .8s;
+    font-size: 1.6rem;
 }
 .mini .filter{
     left: -25%;
 }
-.filter-header,
-.filter-list{
-    padding: 8px 15px;
-    border-bottom: 1px solid #e5e5e5;
+.filter-header{
+    padding: .8rem 1.5rem;
+    border-bottom: .1rem solid #e5e5e5;
 }
 .filter-header h5{
     margin: 0;
 }
+.close{
+    display: none;
+    width: 1rem;
+    height: 1rem;
+    float: right;
+    margin-top: -1.2rem;
+}
 .filter-control input{
-    height: 40px;
-    padding-left: 10px;
-    width: calc(75% - 14px);
+    height: 4rem;
+    padding-left: 1rem;
+    width: calc(75% - 1.4rem);
 }
 .filter-control button{
-    height: 46px;
+    height: 4.5rem;
     width: 25%;
     box-shadow: none;
 }
 .filter-control button:before{
     display: inline-block;
     content: url('./img/filter.svg');
-    height: 10px;
-    width: 10px;
-    margin-right: 1px;
+    height: 1rem;
+    width: 1rem;
+    margin-right: .1rem;
+}
+.filter-list ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.filter-list li{
+    padding: 8px 0 8px 15px;
+    border-bottom: .1rem solid #e5e5e5;
+    cursor: pointer;
+}
+.filter-list li.selected,
+.filter-list li:hover{
+    color: #fff;
+    background: #333
+}
+@media screen and (max-width: 1034px){
+    .filter-control input{
+        height: 1.5rem;
+    }
+    .filter-control button{
+        height: 2rem;
+    }
+}
+@media screen and (max-width: 675px){
+    .close{
+        display: block;
+    }
+    .filter{
+        left: -100%
+    }
+    .mini .filter{
+        left: 0;
+        width: 100%;
+    }
 }

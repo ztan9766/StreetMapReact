@@ -13,7 +13,7 @@ export default class Header extends React.Component {
   render() {
     return (
       <header>
-        <div className="hamburger" onClick={this.toggleFilter}><img src={hamburgerImage} alt="hamburger" tabIndex="1"/></div>
+        <div className="hamburger" onClick={this.toggleFilter}><img src={hamburgerImage} alt="hamburger"/></div>
       </header>
     )
   }
