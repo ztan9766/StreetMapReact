@@ -1,13 +1,12 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# About this project
+This project is a project about map application with google map and third party api.
 
-## Available Scripts
+# How to run this project
+Change current working directory into this project then use command `npm start` to start the local website.
 
-In the project directory, you can run:
+# API 
+Google map JavaScript API has been used in this project.
+Foursquare API has been used in this project.
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
